@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="995.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ce1002.Final.s107502538.controllers.HeHeHecontroller">
+   <children>
+      <ImageView fitHeight="588.0" fitWidth="1044.0" layoutX="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/momo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

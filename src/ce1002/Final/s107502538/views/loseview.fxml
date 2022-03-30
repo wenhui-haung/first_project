@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="995.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ce1002.Final.s107502538.controllers.losecontroller">
+   <children>
+      <ImageView fitHeight="596.0" fitWidth="1165.0" layoutX="-1.0" layoutY="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/開始.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="787.0" layoutY="427.0" mnemonicParsing="false" onAction="#OnAgainPressed" prefHeight="61.0" prefWidth="129.0" text="重玩一次">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="64.0" layoutY="427.0" mnemonicParsing="false" onAction="#OnExitPressed" prefHeight="61.0" prefWidth="129.0" text="退出遊戲">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="_showlayer" layoutX="228.0" layoutY="410.0" prefHeight="94.0" prefWidth="571.0" text="完成層數 : Level 1" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="64.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

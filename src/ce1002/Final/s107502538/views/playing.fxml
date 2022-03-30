@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="995.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ce1002.Final.s107502538.controllers.playcontroller">
+   <children>
+      <Pane fx:id="_background" prefHeight="588.0" prefWidth="995.0">
+         <children>
+            <ImageView fitHeight="588.0" fitWidth="1002.0" layoutX="-4.0">
+               <image>
+                  <Image url="@../image/background.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="_role" fitHeight="150.0" fitWidth="102.0" layoutX="440.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/role.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="_enemy1" fitHeight="81.0" fitWidth="64.0" layoutX="900.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/enemy1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="_enemy2" fitHeight="81.0" fitWidth="64.0" layoutX="14.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/enemy1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="_choose" layoutX="417.0" layoutY="132.0" prefHeight="33.0" prefWidth="149.0" text="選擇一項能力" textFill="#161515">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="_buff1" layoutX="303.0" layoutY="177.0" mnemonicParsing="false" onAction="#OnBuff1Pressed" prefHeight="40.0" prefWidth="114.0" text="增加攻擊力">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="_buff2" layoutX="428.0" layoutY="177.0" mnemonicParsing="false" onAction="#OnBuff2Pressed" prefHeight="40.0" prefWidth="114.0" text="回復生命">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="_buff3" layoutX="555.0" layoutY="177.0" mnemonicParsing="false" onAction="#OnBuff3Pressed" prefHeight="40.0" prefWidth="134.0" text="增加生命上限">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Rectangle fx:id="_bloodback" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" layoutX="446.0" layoutY="400.0" stroke="BLACK" strokeType="INSIDE" width="104.0" />
+            <Rectangle fx:id="_blood" arcHeight="5.0" arcWidth="5.0" fill="#f20000" height="20.0" layoutX="448.0" layoutY="402.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+            <Rectangle fx:id="_enemy3bloodback" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="19.0" layoutX="930.0" layoutY="246.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+            <Rectangle fx:id="_enemy3blood" arcHeight="5.0" arcWidth="5.0" fill="RED" height="15.0" layoutX="932.0" layoutY="248.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="_enemy1bloodback" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="19.0" layoutX="894.0" layoutY="460.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+            <Rectangle fx:id="_enemy1blood" arcHeight="5.0" arcWidth="5.0" fill="RED" height="15.0" layoutX="896.0" layoutY="462.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <Rectangle fx:id="_enemy2bloodback" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="19.0" layoutX="8.0" layoutY="460.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+            <Rectangle fx:id="_enemy2blood" arcHeight="5.0" arcWidth="5.0" fill="RED" height="15.0" layoutX="10.0" layoutY="462.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+            <ImageView fx:id="_pea3" fitHeight="16.0" fitWidth="20.0" layoutX="1100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="_pea2" fitHeight="16.0" fitWidth="20.0" layoutX="1110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="_pea" fitHeight="16.0" fitWidth="20.0" layoutX="1050.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/pea.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="_enemy3" fitHeight="81.0" fitWidth="64.0" layoutX="941.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/enemy_on_wall.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="_showblood" layoutX="469.0" layoutY="403.0" prefHeight="19.0" prefWidth="92.0" text="500/500">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="_showlevel" layoutX="440.0" layoutY="190.0" prefHeight="59.0" prefWidth="142.0" text="第 1 關">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="_showlayer" layoutX="390.0" layoutY="110.0" prefHeight="94.0" prefWidth="260.0" text="Level 1">
+               <font>
+                  <Font name="System Bold Italic" size="64.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="_pause" arcHeight="5.0" arcWidth="5.0" fill="#00ff51" height="588.0" stroke="BLACK" strokeType="INSIDE" width="1000.0" />
+            <Label fx:id="_pauseshow" layoutX="476.0" layoutY="116.0" prefHeight="209.0" prefWidth="272.0" text="Label" />
+         </children>
+      </Pane>
+      <ImageView fx:id="_bullet" fitHeight="26.0" fitWidth="20.0" layoutX="-37.0" layoutY="468.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/bullet.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
